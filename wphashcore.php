@@ -47,7 +47,7 @@ if ( is_admin() ){ // admin actions
 			'tested' => '3.3', // which version of WordPress is your plugin tested up to?
 			'readme' => 'VERSION.MD' // which file to use as the readme for the version number
 		);
-		new WPGitHubUpdater($config);
+		new WP_GitHub_Updater($config);
 
 		// Hook for adding admin menu
 		add_action( 'admin_menu', 'fc_op_page' );
