@@ -30,7 +30,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 if ( ! defined( 'ABSPATH' ) ) die();
 
-include_once('updater.php');
+include( plugin_dir_path( __FILE__ ) . 'update.php');
 
 // Hook for adding admin menus
 if ( is_admin() ){ // admin actions
